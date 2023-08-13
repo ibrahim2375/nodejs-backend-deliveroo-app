@@ -43,20 +43,20 @@ connection.connect(function(err) {
 
 
 
-const sql = 'SELECT * FROM categories';
+// const sql = 'SELECT * FROM categories';
 
-connection.query(sql, function(err, results, fields) {
-    if (err) {
-      console.log(err.message);
-    }else {
-        console.log(results)
-    }
-  });
+// connection.query(sql, function(err, results, fields) {
+//     if (err) {
+//       console.log(err.message);
+//     }else {
+//         console.log(results)
+//     }
+//   });
 
-  connection.end(function(err) {
-    if (err) {
-      return console.log(err.message);
-    }
-  });
+  // connection.end(function(err) {
+  //   if (err) {
+  //     return console.log(err.message);
+  //   }
+  // });
   
 module.exports = connection;
